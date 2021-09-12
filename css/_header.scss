@@ -1,0 +1,66 @@
+.container {
+    width: 1476px;
+    height: 106px;
+    margin: 0 auto;
+
+    .header {
+        display: flex;
+        align-items: center;
+        margin-top: 70px;
+        
+
+        .header__logo {
+            padding: 0;
+            margin: 0;
+        }
+        .header__menu {
+            display: flex;
+            .header__item {
+                .item__text  {
+                    @extend %menu;
+                    text-decoration: none;
+                    &:hover {
+                        @extend %Btn;
+                        color: $hText;
+                        top: -7px;
+                        position: relative;
+                        transition: 0.1s;
+                    }
+                } 
+            }
+        }
+        .btn {
+            border-radius: 25px;
+            width: 294px;
+            height: 50px;
+            background: $blueMain;
+            border-style: none;
+            .btn__text {
+                @extend %Btn;
+                text-decoration: none;
+                color: $TextBtn;
+            }
+            
+        }
+        .header__lang {
+            margin-left: 30px;
+            width: 50px;
+            height: 50px;
+            top: 56px;
+            border-radius: 16px;
+            border: none;
+
+            .lang__btn {
+                color: $blueMain;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
