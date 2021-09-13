@@ -1,147 +1,142 @@
 // цвета
-$bg:#E3E4E6;
-$hText:#292930;
-$Text:#7D8797;
-$blueMain:#5360FE;
-$TextBtn:#EEF7FE;
-$borderCard:#E0E0E0;
-$h2Text:#04035F;
-$blue: #04D7CD;
-$color1:#A8A8A8;
-$color2:#4F4F4F;
-$color3:#F2F2F2;
+$bg: #e3e4e6;
+$hText: #292930;
+$Text: #7d8797;
+$blueMain: #5360fe;
+$TextBtn: #eef7fe;
+$borderCard: #e0e0e0;
+$h2Text: #04035f;
+$blue: #04d7cd;
+$color1: #a8a8a8;
+$color2: #4f4f4f;
+$color3: #f2f2f2;
 // цвета
 
 // Шрифты
 %h1 {
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 64px;
-    line-height: 65px;
-/* or 102% */
-    color: #C4C4C4;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 65px;
+  /* or 102% */
+  color: #c4c4c4;
 }
 %h3 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 35px;
-    /* or 146% */
-    color: #C4C4C4;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  /* or 146% */
+  color: #c4c4c4;
 }
 %main {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 26px;
-    /* or 130% */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  /* or 130% */
 
-    font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
-    color: #C4C4C4;
-
+  color: #c4c4c4;
 }
 %Small {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    /* identical to box height, or 171% */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
 
-    font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
-    color: #C4C4C4;
+  color: #c4c4c4;
 }
 %Bold {
-    font-family: Montserrat;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
 
-    font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
-    color: #C4C4C4;
+  color: #c4c4c4;
 }
 %Btn {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-    color: #C4C4C4;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #eef7fe;
 }
 %menu {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
 
-
-    color: #C4C4C4;
+  color: #c4c4c4;
 }
 %MainBold {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-/* identical to box height */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
 
-
-    color: #C4C4C4;
+  color: #c4c4c4;
 }
 %h1Mobile {
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 40px;
-    /* identical to box height, or 126% */
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height, or 126% */
 
-
-    color: #C4C4C4;
+  color: #c4c4c4;
 }
 %MainMobile {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    /* identical to box height, or 162% */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
 
-    font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
-    color: #C4C4C4;
+  color: #c4c4c4;
 }
 
 %h3Mobile {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 25px;
-    /* or 156% */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  /* or 156% */
 
-
-    color: #C4C4C4;
+  color: #c4c4c4;
 }
 %SmallMobile {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-    /* or 133% */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 133% */
 
-    font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
-    color: #C4C4C4;
+  color: #c4c4c4;
 }
 // Шрифты

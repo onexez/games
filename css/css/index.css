@@ -1,37 +1,79 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-.container .header .header__menu .header__item .item__text a:hover, .container .header .btn .btn__text {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height */
-  color: #C4C4C4;
-}
-
-.container .header .header__menu .header__item .item__text {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height */
-  color: #C4C4C4;
-}
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0 auto;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&display=swap");
+*,
+*:before,
+*:after {
   max-width: 1920px;
   box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  font-family: "Montserrat";
+  margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+footer,
+header,
+nav,
+section,
+main {
   display: block;
 }
 
@@ -39,21 +81,21 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after {
-  content: '';
-  content: none;
-}
-
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -62,68 +104,102 @@ table {
   border-spacing: 0;
 }
 
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 .container {
-  width: 1476px;
-  height: 106px;
   margin: 0 auto;
 }
 
-.container .header {
-  display: flex;
-  align-items: center;
-  margin-top: 70px;
-}
-
-.container .header .header__logo {
-  padding: 0;
-  margin: 0;
-}
-
-.container .header .header__menu {
-  display: flex;
-}
-
-.container .header .header__menu .header__item .item__text {
-  text-decoration: none;
-}
-
-.container .header .header__menu .header__item .item__text a:hover {
-  color: #292930;
-  top: -7px;
-  position: relative;
-  transition: 0.1s;
-}
-
-.container .header .btn {
-  border-radius: 25px;
-  width: 294px;
-  height: 50px;
-  background: #5360FE;
-  border-style: none;
-}
-
-.container .header .btn .btn__text {
-  text-decoration: none;
-  color: #EEF7FE;
-}
-
-.container .header .header__lang {
-  margin-left: 30px;
-  width: 50px;
-  height: 50px;
-  top: 56px;
-  border-radius: 16px;
-  border: none;
-}
-
-.container .header .header__lang .lang__btn {
-  color: #5360FE;
-  font-family: Montserrat;
+.header__container .header__lang {
+  font-family: "Montserrat";
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  /* identical to box height, or 171% */
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #c4c4c4;
+}
+
+.header__container .header__btn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #eef7fe;
+}
+
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 88px;
+}
+
+.header__container .header__logo {
+  margin-right: 130px;
+}
+
+.header__container .header__menu {
+  margin-right: 162px;
+}
+
+.header__container .header__menu .header__item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 53px;
   text-decoration: none;
-  text-transform: uppercase;
+  color: #7d8797;
+}
+
+.header__container .header__menu .header__item .header__item:nth-child(5) {
+  margin: 0px;
+}
+
+.header__container .header__menu .header__item:hover {
+  font-weight: 700;
+  color: #292930;
+}
+
+.header__container .header__menu .header__item ::before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 10px;
+  background-color: #5360fe;
+}
+
+.header__container .header__btn {
+  padding: 14px 60px;
+  border-radius: 25px;
+  background-color: #5360fe;
+  margin-right: 44px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.header__container .header__btn:hover {
+  background-color: #04d7cd;
+  color: #04035f;
+}
+
+.header__container .header__lang {
+  background: #eef7fe;
+  border-radius: 16px;
+  padding: 14px 13px;
+  text-decoration: none;
+  color: #5360fe;
+}
+
+.header__container .header__lang:hover {
+  font-weight: 700;
+  font-style: normal;
 }

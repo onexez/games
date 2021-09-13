@@ -1,66 +1,61 @@
-.container {
-    width: 1476px;
-    height: 106px;
-    margin: 0 auto;
-
-    .header {
-        display: flex;
-        align-items: center;
-        margin-top: 70px;
-        
-
-        .header__logo {
-            padding: 0;
-            margin: 0;
-        }
-        .header__menu {
-            display: flex;
-            .header__item {
-                .item__text  {
-                    @extend %menu;
-                    text-decoration: none;
-                    &:hover {
-                        @extend %Btn;
-                        color: $hText;
-                        top: -7px;
-                        position: relative;
-                        transition: 0.1s;
-                    }
-                } 
-            }
-        }
-        .btn {
-            border-radius: 25px;
-            width: 294px;
-            height: 50px;
-            background: $blueMain;
-            border-style: none;
-            .btn__text {
-                @extend %Btn;
-                text-decoration: none;
-                color: $TextBtn;
-            }
-            
-        }
-        .header__lang {
-            margin-left: 30px;
-            width: 50px;
-            height: 50px;
-            top: 56px;
-            border-radius: 16px;
-            border: none;
-
-            .lang__btn {
-                color: $blueMain;
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 24px;
-                font-feature-settings: 'pnum' on, 'lnum' on;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-        }
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 88px;
+  .header__logo {
+    margin-right: 130px;
+  }
+  .header__menu {
+    margin-right: 162px;
+    .header__item {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      margin-right: 53px;
+      text-decoration: none;
+      color: $Text;
+      .header__item:nth-child(5) {
+        margin: 0px;
+      }
+      &:hover {
+        font-weight: 700;
+        color: #292930;
+      }
+      ::before {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 10px;
+        background-color: $blueMain;
+      }
     }
+  }
+  .header__btn {
+    @extend %Btn;
+    padding: 14px 60px;
+    border-radius: 25px;
+    background-color: $blueMain;
+    margin-right: 44px;
+    text-decoration: none;
+    transition: 0.2s;
+    &:hover {
+      background-color: $blue;
+      color: $h2Text;
+    }
+  }
+  .header__lang {
+    @extend %Small;
+    background: #eef7fe;
+    border-radius: 16px;
+    padding: 14px 13px;
+    text-decoration: none;
+    color: $blueMain;
+    &:hover {
+      font-weight: 700;
+      font-style: normal;
+    }
+  }
 }
