@@ -1,0 +1,136 @@
+.burger-menu {
+  display: none;
+  .burger-menu_button {
+    display: none;
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    z-index: 2010;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 16px;
+    background: #eef7fe;
+    .burger-menu_lines {
+      left: 0;
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background: #04035f;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+  .burger-menu_button::before,
+  .burger-menu_button::after {
+    right: 0;
+    left: 0;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: #04035f;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
+  }
+  .burger-menu_button::before {
+    content: '';
+    top: 16px;
+  }
+  .burger-menu_button::after {
+    content: '';
+    top: 32px;
+  }
+  .burger-menu_button--acitve .burger-menu_lines {
+    opacity: 0;
+  }
+  .burger-menu_button--acitve::before {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .burger-menu_button--acitve::after {
+    bottom: auto;
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: 1265px) {
+  .burger-menu {
+    display: block;
+    .burger-menu_button {
+      display: block;
+    }
+    .burger-menu-body {
+      padding-top: 114px;
+      padding-left: 41px;
+      padding-right: 41px;
+      padding-bottom: 50px;
+      position: fixed;
+      right: 0;
+      width: 60%;
+      max-width: 350px;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      z-index: 1000;
+      background-color: #eef7fe;
+      flex-direction: column;
+      align-items: flex-start;
+      transform: translateX(100%);
+      transition: transform 0.6s ease-in-out;
+      .burger-menu_nav {
+        margin-top: 41px;
+        display: flex;
+        flex-direction: column;
+        .burger-menu_link {
+          margin: 0;
+          margin-bottom: 10px;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 22px;
+          color: #292930;
+          text-decoration: none;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+
+      .phone__title,
+      .mail__title {
+        font-size: 20px;
+      }
+      .phone__text,
+      .mail__text {
+        font-size: 16px;
+      }
+      .burger__btn {
+        margin-top: 30px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #eef7fe;
+        padding: 15px 41px;
+        text-align: center;
+        border-radius: 25px;
+        background-color: $blueMain;
+        text-decoration: none;
+        transition: 0.2s;
+        border: none;
+
+        &:hover {
+          background-color: $blue;
+          color: $h2Text;
+        }
+      }
+    }
+    .burger-menu-body--visible {
+      transform: none;
+    }
+  }
+}

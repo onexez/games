@@ -1,0 +1,269 @@
+.popup-form {
+  display: block;
+  .popup-form__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(78, 81, 83, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    .popup-form__body {
+      padding-top: 38px;
+      padding-left: 41px;
+      width: 961px;
+      height: 679.57px;
+      border-radius: 16px;
+      background: #5360fe;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+      .form-page__body__title {
+        @extend %h1;
+        color: $TextBtn;
+      }
+      .form-page__body__subtitle {
+        @extend %h3;
+        color: $TextBtn;
+        margin-bottom: 20px;
+      }
+      .form-page__body__form {
+        margin: 0px;
+        width: 862px;
+        position: relative;
+        .body__form__input {
+          margin: 0px;
+          display: grid;
+          grid-auto-columns: 1fr;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 6px 30px;
+          .input {
+            margin: 0px;
+            width: 100%;
+            padding-left: 32px;
+            padding-top: 23px;
+            padding-bottom: 23px;
+            border-radius: 35.0008px;
+            outline: none;
+            border: none;
+            margin-bottom: 30px;
+            margin-right: 30px;
+            @extend %main;
+            color: $h2Text;
+          }
+          .input[type] {
+            padding-left: 32px;
+          }
+
+          ::placeholder {
+            @extend %main;
+            color: $h2Text;
+          }
+
+          :nth-child(even) {
+            margin-right: 0px;
+          }
+        }
+
+        .body__form__dropdown {
+          display: flex;
+          flex-direction: column;
+          align-content: flex-start;
+          flex-wrap: wrap;
+          ::placeholder {
+            @extend %main;
+            color: $h2Text;
+          }
+          .dropdown__button {
+            position: relative;
+            appearance: none;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 35px;
+            outline: none;
+            border: none;
+            @extend %main;
+
+            color: $h2Text;
+            padding-left: 32px;
+            padding-top: 23px;
+            padding-bottom: 23px;
+            cursor: pointer;
+            text-align: left;
+            &::after {
+              position: absolute;
+              content: '';
+              width: 20px;
+              height: 10px;
+              background: url(/img/arrow-up.svg);
+              top: 45%;
+              left: 93%;
+              pointer-events: none;
+            }
+          }
+          .dropdown__list {
+            width: 100%;
+            display: none;
+            position: absolute;
+            margin: 0;
+            background: #ffffff;
+            box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            z-index: 199;
+            top: 57%;
+
+            &::after {
+              content: '';
+              position: absolute;
+              left: 95%;
+              bottom: 100%;
+              pointer-events: none;
+              border-style: solid;
+              border-color: transparent;
+              border-width: 20px;
+              height: 0;
+              width: 0;
+              border-bottom-color: #ffffff;
+              margin-left: -20px;
+              z-index: 2;
+            }
+            .dropdown__list-item {
+              @extend %main;
+              color: $h2Text;
+              text-align: left;
+              width: 100%;
+              padding-left: 32px;
+              padding-top: 24px;
+              padding-bottom: 24px;
+              cursor: pointer;
+              margin: 0;
+              &:hover {
+                background: #eef7fe;
+              }
+              &:first-child:hover {
+                border-start-end-radius: 16px;
+                border-start-start-radius: 16px;
+              }
+              &:last-child:hover {
+                border-end-end-radius: 16px;
+                border-end-start-radius: 16px;
+              }
+            }
+          }
+          .second {
+            top: 76%;
+          }
+          .dropdown__list--visible {
+            display: block;
+          }
+          .dropdown__input-hidden {
+            display: none;
+          }
+        }
+        .body__form__dropdown :first-child {
+          margin-bottom: 15px;
+        }
+
+        ///////////////////////////////
+        .form__checkbox {
+          margin-top: -2px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          .checkbox__input {
+            appearance: none;
+            position: absolute;
+          }
+          .checkbox__label {
+            padding-left: 58px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #eef7fe;
+            .label__link {
+              text-decoration: underline;
+              color: #eef7fe;
+            }
+          }
+          .checkbox__label::before {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 29px;
+            border: 2px solid #ffffff;
+            background-color: #5360fe;
+            position: absolute;
+            top: -6px;
+            left: 221px;
+            z-index: 1;
+            border-radius: 10px;
+            cursor: pointer;
+          }
+          .checkbox__label::after {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: url(/img/Vector.svg) no-repeat;
+            background-size: 30px 30px;
+            position: absolute;
+            top: -7px;
+            left: 221px;
+            z-index: 2;
+            opacity: 0;
+            cursor: pointer;
+          }
+          .checkbox__input:checked + .checkbox__label::after {
+            opacity: 1;
+          }
+        }
+        .form_button-submit {
+          margin-top: 38px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .button-submit__sub {
+            @extend %Btn;
+            cursor: pointer;
+            padding: 23px 60px;
+            text-align: center;
+            border-radius: 35px;
+            background: #22215b;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            transition: 0.2s;
+            &:hover {
+              background-color: $blue;
+              color: $h2Text;
+            }
+          }
+        }
+      }
+    }
+    .body--visible {
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .overlay--visible {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+  }
+}
+@media (max-width: 768px) {
+}

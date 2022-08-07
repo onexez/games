@@ -14,7 +14,7 @@ $color3: #f2f2f2;
 
 // Шрифты
 %h1 {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
   font-size: 64px;
@@ -23,7 +23,7 @@ $color3: #f2f2f2;
   color: #c4c4c4;
 }
 %h3 {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -32,41 +32,41 @@ $color3: #f2f2f2;
   color: #c4c4c4;
 }
 %main {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 26px;
   /* or 130% */
 
-  font-feature-settings: "pnum" on, "lnum" on;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 
   color: #c4c4c4;
 }
 %Small {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   /* identical to box height, or 171% */
 
-  font-feature-settings: "pnum" on, "lnum" on;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 
   color: #c4c4c4;
 }
 %Bold {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 16px;
   line-height: 24px;
   /* identical to box height, or 150% */
 
-  font-feature-settings: "pnum" on, "lnum" on;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 
   color: #c4c4c4;
 }
 %Btn {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -75,7 +75,7 @@ $color3: #f2f2f2;
   color: #eef7fe;
 }
 %menu {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -85,7 +85,7 @@ $color3: #f2f2f2;
   color: #c4c4c4;
 }
 %MainBold {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -95,7 +95,7 @@ $color3: #f2f2f2;
   color: #c4c4c4;
 }
 %h1Mobile {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
   font-size: 32px;
@@ -105,20 +105,20 @@ $color3: #f2f2f2;
   color: #c4c4c4;
 }
 %MainMobile {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   /* identical to box height, or 162% */
 
-  font-feature-settings: "pnum" on, "lnum" on;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 
   color: #c4c4c4;
 }
 
 %h3Mobile {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -128,15 +128,44 @@ $color3: #f2f2f2;
   color: #c4c4c4;
 }
 %SmallMobile {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
   /* or 133% */
 
-  font-feature-settings: "pnum" on, "lnum" on;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 
   color: #c4c4c4;
 }
 // Шрифты
+
+.titleh1 {
+  @extend %h1;
+  color: $hText;
+}
+.title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  /* identical to box height, or 146% */
+
+  color: #22215b;
+}
+.text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  /* or 128% */
+
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  /* Основной текст */
+
+  color: #7d8797;
+}

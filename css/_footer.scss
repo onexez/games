@@ -1,0 +1,33 @@
+.footer {
+  margin-top: 88px;
+  margin-bottom: 88px;
+  .footer__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .text__year,
+    .text__link {
+      margin: 0px;
+      color: $h2Text;
+      @extend %main;
+    }
+    .text__year {
+      margin-right: 52px;
+    }
+    .text__link a {
+      color: $h2Text;
+      text-decoration: none;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .footer {
+    .footer__text {
+      display: block;
+      text-align: center;
+      .text__year {
+        margin: 0;
+      }
+    }
+  }
+}
