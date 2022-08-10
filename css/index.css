@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&display=swap');
 *,
 *:before,
 *:after {
@@ -139,7 +139,14 @@ main {
   overflow: hidden;
 }
 
-.titleh1, .main-page .main-page__body .main-page__text .main-page__title, .games .text__title, .cards__title .title__text, .video-page .title__text, .form-page .form-page__body__title, .about .about-page__title, .popup-form .popup-form__overlay .popup-form__body .form-page__body__title {
+.titleh1,
+.main-page .main-page__body .main-page__text .main-page__title,
+.games .text__title,
+.cards__title .title__text,
+.video-page .title__text,
+.form-page .form-page__body__title,
+.about .about-page__title,
+.popup-form .popup-form__overlay .popup-form__body .form-page__body__title {
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
@@ -149,7 +156,12 @@ main {
   color: #c4c4c4;
 }
 
-.games .games__slider .swiper .swiper-slide .swiper-slide__title, .video-page .title__subtext, .form-page .form-page__body__subtitle, .about .about-page__circles .circles__text, .about .about-page__circle .circle__text, .popup-form .popup-form__overlay .popup-form__body .form-page__body__subtitle {
+.games .games__slider .swiper .swiper-slide .swiper-slide__title,
+.video-page .title__subtext,
+.form-page .form-page__body__subtitle,
+.about .about-page__circles .circles__text,
+.about .about-page__circle .circle__text,
+.popup-form .popup-form__overlay .popup-form__body .form-page__body__subtitle {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
@@ -159,8 +171,29 @@ main {
   color: #c4c4c4;
 }
 
-.main-page .main-page__body .main-page__text .main-page_subtitle, .games .games__slider .swiper .swiper-slide .swiper-slide__text, .cards__card .card__text, .video-page .video-page__slider .swiper-slide__text, .form-page .form-page__body .form-page__body__form .body__form__input .input, .form-page .form-page__body .form-page__body__form .body__form__input ::placeholder, .form-page .form-page__body .form-page__body__form .body__form__dropdown ::placeholder, .form-page .form-page__body .form-page__body__form .body__form__dropdown .dropdown__button, .form-page .form-page__body .form-page__body__form .body__form__dropdown .dropdown__list .dropdown__list-item, .footer .footer__text .text__year,
-.footer .footer__text .text__link, .about .about-page__subtitle, .popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__input .input, .popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__input ::placeholder, .popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__dropdown ::placeholder, .popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__dropdown .dropdown__button, .popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__dropdown .dropdown__list .dropdown__list-item {
+.main-page .main-page__body .main-page__text .main-page_subtitle,
+.games .games__slider .swiper .swiper-slide .swiper-slide__text,
+.cards__card .card__text,
+.video-page .video-page__slider .swiper-slide__text,
+.form-page .form-page__body .form-page__body__form .body__form__input .input,
+.form-page .form-page__body .form-page__body__form .body__form__input ::placeholder,
+.form-page .form-page__body .form-page__body__form .body__form__dropdown ::placeholder,
+.form-page .form-page__body .form-page__body__form .body__form__dropdown .dropdown__button,
+.form-page .form-page__body .form-page__body__form .body__form__dropdown .dropdown__list .dropdown__list-item,
+.footer .footer__text .text__year,
+.footer .footer__text .text__link,
+.about .about-page__subtitle,
+.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__input .input,
+.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__input ::placeholder,
+.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__dropdown ::placeholder,
+.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__dropdown .dropdown__button,
+.popup-form
+  .popup-form__overlay
+  .popup-form__body
+  .form-page__body__form
+  .body__form__dropdown
+  .dropdown__list
+  .dropdown__list-item {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
@@ -182,7 +215,10 @@ main {
   color: #c4c4c4;
 }
 
-.header .header__body .header__end .btn, .main-page .main-page__body .main__page__link .main-page__btn, .form-page .form-page__body .form-page__body__form .form_button-submit .button-submit__sub, .popup-form .popup-form__overlay .popup-form__body .form-page__body__form .form_button-submit .button-submit__sub {
+.header .header__body .header__end .btn,
+.main-page .main-page__body .main__page__link .main-page__btn,
+.form-page .form-page__body .form-page__body__form .form_button-submit .button-submit__sub,
+.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .form_button-submit .button-submit__sub {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
@@ -1036,12 +1072,22 @@ main {
   background: #eef7fe;
 }
 
-.form-page .form-page__body .form-page__body__form .body__form__dropdown .dropdown__list .dropdown__list-item:first-child:hover {
+.form-page
+  .form-page__body
+  .form-page__body__form
+  .body__form__dropdown
+  .dropdown__list
+  .dropdown__list-item:first-child:hover {
   border-start-end-radius: 16px;
   border-start-start-radius: 16px;
 }
 
-.form-page .form-page__body .form-page__body__form .body__form__dropdown .dropdown__list .dropdown__list-item:last-child:hover {
+.form-page
+  .form-page__body
+  .form-page__body__form
+  .body__form__dropdown
+  .dropdown__list
+  .dropdown__list-item:last-child:hover {
   border-end-end-radius: 16px;
   border-end-start-radius: 16px;
 }
@@ -1845,7 +1891,12 @@ main {
   text-align: left;
 }
 
-.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__dropdown .dropdown__button::after {
+.popup-form
+  .popup-form__overlay
+  .popup-form__body
+  .form-page__body__form
+  .body__form__dropdown
+  .dropdown__button::after {
   position: absolute;
   content: '';
   width: 20px;
@@ -1884,7 +1935,13 @@ main {
   z-index: 2;
 }
 
-.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__dropdown .dropdown__list .dropdown__list-item {
+.popup-form
+  .popup-form__overlay
+  .popup-form__body
+  .form-page__body__form
+  .body__form__dropdown
+  .dropdown__list
+  .dropdown__list-item {
   color: #04035f;
   text-align: left;
   width: 100%;
@@ -1895,16 +1952,34 @@ main {
   margin: 0;
 }
 
-.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__dropdown .dropdown__list .dropdown__list-item:hover {
+.popup-form
+  .popup-form__overlay
+  .popup-form__body
+  .form-page__body__form
+  .body__form__dropdown
+  .dropdown__list
+  .dropdown__list-item:hover {
   background: #eef7fe;
 }
 
-.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__dropdown .dropdown__list .dropdown__list-item:first-child:hover {
+.popup-form
+  .popup-form__overlay
+  .popup-form__body
+  .form-page__body__form
+  .body__form__dropdown
+  .dropdown__list
+  .dropdown__list-item:first-child:hover {
   border-start-end-radius: 16px;
   border-start-start-radius: 16px;
 }
 
-.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__dropdown .dropdown__list .dropdown__list-item:last-child:hover {
+.popup-form
+  .popup-form__overlay
+  .popup-form__body
+  .form-page__body__form
+  .body__form__dropdown
+  .dropdown__list
+  .dropdown__list-item:last-child:hover {
   border-end-end-radius: 16px;
   border-end-start-radius: 16px;
 }
@@ -1913,11 +1988,21 @@ main {
   top: 76%;
 }
 
-.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__dropdown .dropdown__list--visible {
+.popup-form
+  .popup-form__overlay
+  .popup-form__body
+  .form-page__body__form
+  .body__form__dropdown
+  .dropdown__list--visible {
   display: block;
 }
 
-.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .body__form__dropdown .dropdown__input-hidden {
+.popup-form
+  .popup-form__overlay
+  .popup-form__body
+  .form-page__body__form
+  .body__form__dropdown
+  .dropdown__input-hidden {
   display: none;
 }
 
@@ -1948,7 +2033,13 @@ main {
   color: #eef7fe;
 }
 
-.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .form__checkbox .checkbox__label .label__link {
+.popup-form
+  .popup-form__overlay
+  .popup-form__body
+  .form-page__body__form
+  .form__checkbox
+  .checkbox__label
+  .label__link {
   text-decoration: underline;
   color: #eef7fe;
 }
@@ -1983,7 +2074,13 @@ main {
   cursor: pointer;
 }
 
-.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .form__checkbox .checkbox__input:checked + .checkbox__label::after {
+.popup-form
+  .popup-form__overlay
+  .popup-form__body
+  .form-page__body__form
+  .form__checkbox
+  .checkbox__input:checked
+  + .checkbox__label::after {
   opacity: 1;
 }
 
@@ -2006,7 +2103,12 @@ main {
   transition: 0.2s;
 }
 
-.popup-form .popup-form__overlay .popup-form__body .form-page__body__form .form_button-submit .button-submit__sub:hover {
+.popup-form
+  .popup-form__overlay
+  .popup-form__body
+  .form-page__body__form
+  .form_button-submit
+  .button-submit__sub:hover {
   background-color: #04d7cd;
   color: #04035f;
 }
