@@ -126,7 +126,7 @@ input {
 }
 
 main {
-  background: url(/img/back-form.svg) repeat no-repeat, url(/img/1and2.svg) repeat no-repeat;
+  background: url(../img/back-form.svg) repeat no-repeat, url(../img/1and2.svg) repeat no-repeat;
   background-position-y: 104%, 0%;
   align-items: center;
 }
@@ -330,7 +330,7 @@ main {
   }
 }
 .main-page {
-  background: url(/img/Иллюстрация.svg);
+  background: url(../img/Иллюстрация.svg);
   background-repeat: no-repeat;
   background-position-x: 105%;
   padding-bottom: 248px;
